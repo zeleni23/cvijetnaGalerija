@@ -1,0 +1,103 @@
+﻿/* ********** cvjetna galerija*******************   */
+
+/* *********reserst ************************************************ */
+*{box-sizing:border-box;
+margin:0;}
+/* osnovno uređivanje html elemenata *************************** */
+body{background-color:#EEE;
+font-family:'Trabuchet MS',sans-sefir;
+font-size:16px;
+color:#333;}
+ul{list-style-type:none;
+padding:0;}
+a{text-decoration:none;}/* ne želim podcrtane linkove, svojstvo dekoracije koristiti,tj poništiti je**/
+h1,h2,h3,h4,h5,h6{font-family: 'Racing Sans One', cursive;
+font-weight:lighter;}
+img,video{max-width:100%;
+height:auto;}
+h1,h2,h3,h4,h5,h6,p,ul,ol{margin-bottom:1em;}
+/* Layout ********************* */
+#menu, #content, #sidebar, #page-footer{padding:1em;}
+#menu, #page-footer{background-color:#333;
+color:#EEE;}
+.wrapper{width:100%;
+max-width:1200px;
+margin:1em auto;}
+.clearfix:after{content:" ";
+display:block;
+clear:both;}
+/* stupci se pišu col,prepisano iz Avanturista.za izračunati width prvog stupca treba ih preračunati u postotke-za prvi stupac col8-12=8:12x100=66.66 a float znači gdje je smješten stupac, ovaj prvi je lijevo znači left. za drugi stupac sve isto računanje samo je float desno***** I SADA PAZITI DA OVE KLASE PRIMJENIMO U HTML idemo u <main id=content" I DODAJEMO class="8-12">glavni sadržak</main> a drugu KLASU u <aside id="sideb.." I TU DODADTI class="col4-12">******** */
+/* za cvjećarnicu svoje klase izmijeniti ili ih staviti  obje col6-12**** */
+.col{float:left;
+padding-right:1em;}/* save-ati to i u html-u di smo dodali col8-12 ispred još jednom napisati riječ "col"** */
+.col:last-child{padding-right:0;}/* možemo staviti u last-child{color#F00}i zadnji će red stupca promjeniti boju u crvenu., a mi to da  da promjenimo padding**** */
+.col3-12{width:25%;}
+.col8-12{width:66.66%;}
+.col4-12{width:33.33%;}
+.col6-12{width:50%;}
+
+/* HEADER *********************************************** */
+/* Navigacija ******* svi linkovi u istom redu */
+#menu .wrapper {margin:0 auto;}
+#menu ul{margin-bottom:0;}
+/* *** Izbornik******* */
+#menu li{display:inline;
+margin-right:2em;}/* razmak između linkova 2 slovna mjesta** */
+#menu a{font-size:20px;
+color:#EEE;}
+/*text-transform:uppercase;* */}
+#menu a:visited{color:#999;}
+#menu a:hover{color:#F93;}
+/* *****Tražilica ******* */
+#search-icon{vertical-align:middle;}
+#s{width:90%;}
+
+/*  Banner ************************************ */
+#banner{height:481px;
+color:#FFF;
+display:flex;
+background:url(slikenav/prekrasnapozadinaaa.jpg) no-repeat center center/cover;}
+#banner .wrapper{margin:auto;/* rješenje za Firefox, Chrome, Opera, Safari */
+align-self:center; /* Internet explorer */}
+#banner h1,#banner p{margin-bottom:0;}
+#banner h1{font-size:66px;}
+#banner p{font-size:26px;/* ubaciti ispred tog teksta LOGO obavezno */
+font-family:'Sedgwick Ave', cursive;}
+
+/* MAIN *****************************/
+.post{border-bottom:1px solid #CCC;
+padding-bottom:1em;
+margin-bottom:1em;}
+.post h2 a{color:#999;}
+.post h2 a:visited{color:#999;}
+.post h2 a:hover{color:#F93;}
+.post a img:hover{opacity:0.75;}
+
+/* ASIDE ******************************************** */
+#sidebar a{color:#333;
+border-bottom:1px solid #CCC;
+display:block;
+padding-bottom:5px;
+margin-bottom:10px;}
+#sidebar a:visited{color:#999;}
+#sidebar a:hover{color:#F93;}
+
+
+/* FOOTER******************************************** */
+#page-footer h1{font-size:22px;}
+#page-footer a{color:#EEE;
+display:inline-block;
+margin-bottom:1em;}
+#page-footer a:visited{color:#999;}
+#page-footer a:hover{color:#F93;}
+#page-footer i{font-size:2em;
+vertical-align:middle;
+margin-right:0,5em;}
+
+#contact,#copyrght{border-top:1px solid #999;
+padding:1em 0;}
+#copyrght{text-align:middle;}
+
+
+
+
